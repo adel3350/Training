@@ -12,6 +12,7 @@
 		97D4D6A91E4394C30078EB3E /* Lecture3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6A81E4394C30078EB3E /* Lecture3.cpp */; };
 		97D4D6AF1E43A2D20078EB3E /* Lecture4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6AD1E43A2D20078EB3E /* Lecture4.cpp */; };
 		97D4D6B11E43B73A0078EB3E /* Lecture5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6B01E43B73A0078EB3E /* Lecture5.cpp */; };
+		97D4D6B41E43C88B0078EB3E /* Assignment2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6B31E43C88B0078EB3E /* Assignment2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		97D4D6AE1E43A2D20078EB3E /* Lecture4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lecture4.h; sourceTree = "<group>"; };
 		97D4D6B01E43B73A0078EB3E /* Lecture5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lecture5.cpp; sourceTree = "<group>"; };
 		97D4D6B21E43B7430078EB3E /* Lecture5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lecture5.h; sourceTree = "<group>"; };
+		97D4D6B31E43C88B0078EB3E /* Assignment2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assignment2.cpp; sourceTree = "<group>"; };
+		97D4D6B51E43C8970078EB3E /* Assignment2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assignment2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				97D4D6AE1E43A2D20078EB3E /* Lecture4.h */,
 				97D4D6B01E43B73A0078EB3E /* Lecture5.cpp */,
 				97D4D6B21E43B7430078EB3E /* Lecture5.h */,
+				97D4D6B31E43C88B0078EB3E /* Assignment2.cpp */,
+				97D4D6B51E43C8970078EB3E /* Assignment2.h */,
 			);
 			path = Training;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				97D4D6B11E43B73A0078EB3E /* Lecture5.cpp in Sources */,
 				97D4D6A61E4386DD0078EB3E /* Assignment1.cpp in Sources */,
 				97D4D6AF1E43A2D20078EB3E /* Lecture4.cpp in Sources */,
+				97D4D6B41E43C88B0078EB3E /* Assignment2.cpp in Sources */,
 				97D4D69F1E437BAF0078EB3E /* Lecture1-2.cpp in Sources */,
 				97D4D6A91E4394C30078EB3E /* Lecture3.cpp in Sources */,
 			);

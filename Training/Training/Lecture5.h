@@ -9,5 +9,7 @@
 #ifndef Lecture5_h
 #define Lecture5_h
 
+void changeValueThroughAddress(int *ptr);
+int *returnDatPointer(int x);
 
 #endif /* Lecture5_h */

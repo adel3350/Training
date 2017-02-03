@@ -141,7 +141,7 @@
 ////6 Array operations
 //
 ////6.1 - printArray function
-//void printArray(int arr[], int lengthOfArray) {
+////void printArray(int arr[], int lengthOfArray) {
 //    for(int i=0;i<lengthOfArray;i++) {
 //        if (i!=(lengthOfArray-1))
 //            cout<<arr[i]<<", ";

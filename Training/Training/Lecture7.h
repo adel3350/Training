@@ -9,5 +9,9 @@
 #ifndef Lecture7_h
 #define Lecture7_h
 
+#include <stdio.h>
+#include <iostream>
+
+
 
 #endif /* Lecture7_h */

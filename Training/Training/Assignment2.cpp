@@ -10,7 +10,14 @@
 #include <iostream>
 #include <stdlib.h>
 #include <cmath>
+#include <array>
+#include <type_traits>
 #include "Assignment2.h"
+
+
+#define ARRAY_SIZE(array) (sizeof((array))/sizeof((array[0])))
+//Used in part 6.3
+
 
 using namespace std;
 
@@ -18,15 +25,47 @@ int main() {
     cout<<"Int sum: "<<calculateSum(3, 2)<<endl;
     cout<<"Double sum: "<<calculateSum(3.5, 2.6)<<endl;
     int arr[3]={1,2,3};
+    int intArray[5]={1,2,3,4,5};
     cout<<"Sum of array content is: "<<calculateSum(arr, 3)<<endl;
     
     
-    //*******PI problem, start***********************
+    //*******5-PI problem, start***********************
     cout << "Value of PI is: "<<calculatePI(500000)<<endl;
     //Details are in fucntion below
     //*******PI problem, end***********************
     
+    //*******6-Array problem, start***********************
+    printArray(intArray,5);
+    reverseArrayContent(intArray, 5);
+    printArray(intArray, 5);
     
+    int doubleDArray[WIDTH][LENGTH]={{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
+    int reversedArray[LENGTH][WIDTH]={{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
+    print2DArray(3, 5, doubleDArray);
+    
+    transpose(doubleDArray, reversedArray);
+    print2DArray(5, 3, reversedArray);
+    //*******Array problem, end***********************
+    
+    
+    //*******7-Pointer/Strings problem, start***********************
+    int a=3;
+    int b=5;
+    swapValues(&a, &b);
+    cout<<"Values of a and b are: "<<a<<", "<<b<<endl;
+    swapValuesByCallByReference(a,b);
+    cout<<"Values of a and b are: "<<a<<", "<<b<<endl;
+    
+    //Pointers
+    int *ptr1 = &a;
+    int *ptr2 = &b;
+    *ptr1 = 1;
+    *ptr2 = 2;
+    swapPointers(&ptr1, &ptr2);
+    
+    cout<<"Pointer 1 points to value: "<<*ptr1<<endl;
+    cout<<"Pointer 2 points to value: "<<*ptr2<<endl;
+    //*******pointer/Strings problem, end***********************
 }
 
 //4.1 Writing a function that calculates the sum
@@ -97,4 +136,83 @@ double calculatePI(int numOfSimulations) {
     double fraction = (double)numOfDartsInside/numOfSimulations;
     
     return fraction*4;
+}
+
+//6 Array operations
+
+//6.1 - printArray function
+void printArray(int arr[], int lengthOfArray) {
+    for(int i=0;i<lengthOfArray;i++) {
+        if (i!=(lengthOfArray-1))
+            cout<<arr[i]<<", ";
+        else
+            cout<<arr[i]<<endl;
+    }
+}
+
+//6.2 - Reverse Array content
+void reverseArrayContent(int arr[],int lengthOfArray) {
+    int reversedArray[lengthOfArray];
+    int j=0;
+    for(int i=lengthOfArray-1;i>=0;i--) {
+        reversedArray[j]=arr[i];
+        j++;
+    }
+    for(int i=0;i<lengthOfArray;i++) {
+        arr[i]=reversedArray[i];
+    }
+}
+
+//6.3 - Transpose function
+void transpose (const int input [][LENGTH], int output[][WIDTH]) {
+    for(int i=0;i<WIDTH;i++){
+        for (int j=0;j<LENGTH;j++){
+            output[j][i]=input[i][j];
+        }
+    }
+}
+
+//Function that prints a 2D aray to be able to see the result
+void print2DArray(int width,int length, int arr[WIDTH][LENGTH]) {
+    for (int i=0;i<width;i++){
+        for (int j=0;j<length;j++){
+            cout << arr[i][j]<<"\t";
+        }
+        cout <<"\n";
+    }
+}
+void print2DArray(int width,int length, int arr[LENGTH][WIDTH]) {
+    for (int i=0;i<width;i++){
+        for (int j=0;j<length;j++){
+            cout << arr[i][j]<<"\t";
+        }
+        cout <<"\n";
+    }
+}
+
+
+//7 - Pointers and strings
+//7.3 - swap func using pointers
+void swapValues(int *a, int *b) {
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+//7.2 - swap fnc using call by reference
+void swapValuesByCallByReference(int &a, int &b){
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+
+//7.4 - pointer to pointer
+void swapPointers(int **x, int **y) {
+    int *temp ;
+    temp = *x;
+    *x=*y;
+    *y=temp;
+    
 }

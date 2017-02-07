@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97BE278C1E490194009A0FAC /* geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BE278B1E490194009A0FAC /* geometry.cpp */; };
 		97D4D69F1E437BAF0078EB3E /* Lecture1-2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D69E1E437BAF0078EB3E /* Lecture1-2.cpp */; };
 		97D4D6A61E4386DD0078EB3E /* Assignment1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6A51E4386DD0078EB3E /* Assignment1.cpp */; };
 		97D4D6A91E4394C30078EB3E /* Lecture3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6A81E4394C30078EB3E /* Lecture3.cpp */; };
@@ -16,6 +17,7 @@
 		97D4D6B71E4513730078EB3E /* Lecture6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6B61E4513730078EB3E /* Lecture6.cpp */; };
 		97D4D6BA1E4523DD0078EB3E /* Lecture7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6B91E4523DD0078EB3E /* Lecture7.cpp */; };
 		97D4D6BD1E48CBB90078EB3E /* Lecture8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6BC1E48CBB90078EB3E /* Lecture8.cpp */; };
+		97D4D6C01E48D8590078EB3E /* Assignment3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97D4D6BF1E48D8590078EB3E /* Assignment3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		97BE278B1E490194009A0FAC /* geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geometry.cpp; sourceTree = "<group>"; };
 		97D4D69B1E437BAF0078EB3E /* Training */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Training; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D4D69E1E437BAF0078EB3E /* Lecture1-2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Lecture1-2.cpp"; sourceTree = "<group>"; };
 		97D4D6A51E4386DD0078EB3E /* Assignment1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assignment1.cpp; sourceTree = "<group>"; };
@@ -48,6 +51,9 @@
 		97D4D6BB1E4523E70078EB3E /* Lecture7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lecture7.h; sourceTree = "<group>"; };
 		97D4D6BC1E48CBB90078EB3E /* Lecture8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lecture8.cpp; sourceTree = "<group>"; };
 		97D4D6BE1E48CBC30078EB3E /* Lecture8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lecture8.h; sourceTree = "<group>"; };
+		97D4D6BF1E48D8590078EB3E /* Assignment3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assignment3.cpp; sourceTree = "<group>"; };
+		97D4D6C11E48D8630078EB3E /* Assignment3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assignment3.h; sourceTree = "<group>"; };
+		97D4D6C41E48DE7D0078EB3E /* geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,10 @@
 				97D4D6BB1E4523E70078EB3E /* Lecture7.h */,
 				97D4D6BC1E48CBB90078EB3E /* Lecture8.cpp */,
 				97D4D6BE1E48CBC30078EB3E /* Lecture8.h */,
+				97D4D6BF1E48D8590078EB3E /* Assignment3.cpp */,
+				97D4D6C11E48D8630078EB3E /* Assignment3.h */,
+				97BE278B1E490194009A0FAC /* geometry.cpp */,
+				97D4D6C41E48DE7D0078EB3E /* geometry.h */,
 			);
 			path = Training;
 			sourceTree = "<group>";
@@ -162,10 +172,12 @@
 				97D4D6B11E43B73A0078EB3E /* Lecture5.cpp in Sources */,
 				97D4D6A61E4386DD0078EB3E /* Assignment1.cpp in Sources */,
 				97D4D6AF1E43A2D20078EB3E /* Lecture4.cpp in Sources */,
+				97BE278C1E490194009A0FAC /* geometry.cpp in Sources */,
 				97D4D6B41E43C88B0078EB3E /* Assignment2.cpp in Sources */,
 				97D4D69F1E437BAF0078EB3E /* Lecture1-2.cpp in Sources */,
 				97D4D6A91E4394C30078EB3E /* Lecture3.cpp in Sources */,
 				97D4D6B71E4513730078EB3E /* Lecture6.cpp in Sources */,
+				97D4D6C01E48D8590078EB3E /* Assignment3.cpp in Sources */,
 				97D4D6BD1E48CBB90078EB3E /* Lecture8.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

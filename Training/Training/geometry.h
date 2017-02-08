@@ -59,6 +59,25 @@ protected:
     PointArray array;
     static int numOfPolygons;
 public:
-    
+    Polygon(Point arrayOfPoints[],const int lengthOfArray);
+    Polygon(const PointArray &pt);
+    ~Polygon(){numOfPolygons--;}
+    virtual int calculateArea() = 0;
+    int getNumPolygons();
+    int getNumSides();
+    const PointArray *getPoints() const;
+};
+//*******************************************Rectangle************************************************
+class Rectangle: public Polygon{
+public:
+    Rectangle(const Point &p1, const Point &p2);
+    Rectangle(const Point &p1,const Point &p2,const Point &p3,const Point &p4);
+    ~Rectangle(){}
+    int calculateArea();
+};
+//*******************************************Triangle*************************************************
+class Triangle: public Polygon{
+public:
+    Triangle(const Point &p1, const Point &p2, const Point &p3);
 };
 #endif /* geometry_h */

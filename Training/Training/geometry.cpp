@@ -127,8 +127,48 @@ void PointArray::tostring(){
 }
 //*******************************************Polygon**************************************************
 
-
-
-int main() {
- 
+Polygon::Polygon(Point arrayOfPoints[],int lengthOfArray): array(PointArray(arrayOfPoints,lengthOfArray)) {
+    numOfPolygons++;
 }
+
+Polygon::Polygon(const PointArray &pt) {
+    this->array=pt;
+    numOfPolygons++;
+}
+
+int Polygon::numOfPolygons=0;
+
+int Polygon::getNumPolygons() {
+    return numOfPolygons;
+}
+
+int Polygon::getNumSides() {
+    return array.getSize();
+}
+
+const PointArray *Polygon::getPoints() const {
+    return &array;
+}
+//*******************************************Rectangle************************************************
+Point constructorPoints[4];
+
+Point *updateConstructorPoints(const Point &p1,const Point &p2,const Point &p3, const Point &p4=Point(0,0)){
+    constructorPoints[0]=p1;
+    constructorPoints[1]=p2;
+    constructorPoints[2]=p3;
+    constructorPoints[3]=p4;
+    return constructorPoints;
+}
+
+Rectangle::Rectangle(const Point &p1, const Point & p2): Polygon(updateConstructorPoints(p1, Point(p2.getX(),p1.getY()),p2, Point(p1.getX(),p2.getY())),4){}
+
+Rectangle::Rectangle(const Point &p1,const Point &p2,const Point &p3,const Point &p4): Polygon(updateConstructorPoints(p1, p2, p3, p4),4){}
+
+int Rectangle::calculateArea(){
+    int width, length;
+    length=abs(constructorPoints[0].getX()-constructorPoints[1].getX());
+    width=abs(constructorPoints[0].getY()-constructorPoints[2].getY());
+    return width*length;
+}
+//*******************************************Triangle*************************************************
+Triangle::Triangle(const Point &p1, const Point &p2, const Point &p3): Polygon(updateConstructorPoints(p1, p2, p3),3){}

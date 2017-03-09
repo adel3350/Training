@@ -28,4 +28,5 @@ int main(){
     StudentGroup<double, 5> smallGroup(17);
     cout<<smallGroup.getGrade()<<endl;
     cout<<smallGroup.getNumOfStudents()<<endl;
+    //Random change 1
 }

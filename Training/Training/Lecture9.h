@@ -35,6 +35,7 @@ class StudentGroup {
 private:
     int numberOfStudents = N;
     T overallGrade;
+    //Added a change here
 public:
     StudentGroup(const T grade):overallGrade(grade){};
     T getGrade(){
@@ -42,7 +43,6 @@ public:
     }
     int getNumOfStudents(){
         return numberOfStudents;
-        //Random change 2
         //Random change 3
     }
 };
